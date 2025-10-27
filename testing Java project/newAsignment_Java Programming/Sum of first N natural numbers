@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+       
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        
+        int sum = 0;
+        int i = 1; // start from 1
+        
+        while (i <= n) {
+            sum += i; // add i to sum
+            i++;       // increment i
+        }
+        
+        System.out.println("Sum of first " + n + " natural numbers = " + sum);
+    }
+}
