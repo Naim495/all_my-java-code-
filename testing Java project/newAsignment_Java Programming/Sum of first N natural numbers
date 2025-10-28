@@ -4,18 +4,17 @@ class Main {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-       
-        System.out.print("Enter a number: ");
+        
+        System.out.print("Enter N natural numbers: ");
         int n = sc.nextInt();
         
-        int sum = 0;
-        int i = 1; // start from 1
-        
+        int i = 1;
+        int sum = 0;  // Start from 0
+
         while (i <= n) {
-            sum += i; // add i to sum
-            i++;       // increment i
+            sum = sum + i;
+            i++;
         }
-        
-        System.out.println("Sum of first " + n + " natural numbers = " + sum);
+
+        System.out.println("The sum of first " + n + " natural numbers is: " + sum);
     }
-}
